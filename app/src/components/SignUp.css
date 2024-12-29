@@ -1,0 +1,143 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row; /* Default for desktop */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 40%; /* Take 40% of the screen on desktop */
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sidebar p {
+  font-size: 1.125rem;
+  color: #ccc;
+}
+
+/* Main content styles */
+.main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subtitle a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #9794aa;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+/* Error messages */
+.error-message {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack sidebar and main for mobile */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+    padding: 1.5rem;
+  }
+
+  .sidebar h1 {
+    font-size: 2rem;
+  }
+
+  .sidebar p {
+    font-size: 1rem;
+  }
+
+  .main {
+    padding: 1.5rem;
+  }
+
+  .form {
+    max-width: 100%; /* Allow form to take full width on mobile */
+  }
+}

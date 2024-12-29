@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+  max-width: 12000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #241e1e, #5b1717, red);
+  color: white;
+  padding: 50px;
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: red;
+  border: 1px solid #ccc;
+  border-radius: 0 0 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 150px;
+  z-index: 1000;
+}
+
+.dropdown-menu div {
+  padding: 10px 15px;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu div:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-menu div:last-child {
+  border-bottom: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 150px 70px;
+}
+
+.resume-upload,
+.job-details {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.resume-upload h2,
+.job-details h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.upload-box {
+  border: 2px dashed #ccc;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.upload-box p {
+  margin: 0 0 20px;
+}
+
+.upload-box span {
+  color: #888;
+  font-size: 14px;
+}
+
+.browse-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.browse-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 105.5%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  width: 100%;
+  padding: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.save-btn {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.vertical-line {
+  border-left: 2px solid gray;
+  height: auto;
+  margin: 0 20px;
+}
